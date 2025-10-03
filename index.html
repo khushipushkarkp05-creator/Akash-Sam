@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story | Sam & Akshu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Parisienne&family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #0a0a0a;
+            --secondary: #8a2be2;
+            --accent: #ba55d3;
+            --light: #d8bfd8;
+            --text: #f5f5f5;
+            --purple-dark: #4b0082;
+            --purple-light: #9370db;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            --transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #0a0a0a;
+            color: var(--text);
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            width: 100%;
+            min-height: 100vh;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            color: var(--light);
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+        
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--purple-light);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--accent), transparent);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--light);
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 300;
+            opacity: 0.9;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+        
+        .content-box {
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 1000px;
+            width: 90%;
+            box-shadow: var(--shadow);
+            position: relative;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .letter-content {
+            font-family: 'Parisienne', cursive;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            text-align: justify;
+            color: var(--text);
+        }
+        
+        .letter-content p {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .letter-content p:before {
+            content: '"';
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.7;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--secondary), var(--accent));
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 60px;
+            width: 50%;
+            padding: 0 40px;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-content {
+            background: rgba(138, 43, 226, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            transition: var(--transition);
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            background: rgba(138, 43, 226, 0.15);
+        }
+        
+        .timeline-content:after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            width: 20px;
+            height: 20px;
+            background: rgba(138, 43, 226, 0.1);
+            transform: rotate(45deg);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content:after {
+            right: -10px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content:after {
+            left: -10px;
+        }
+        
+        .timeline-date {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .timeline-text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .memory-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;
+            padding: 20px 0;
+            margin-top: 30px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--secondary) transparent;
+        }
+        
+        .memory-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .memory-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .memory-scroll::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+            border-radius: 10px;
+        }
+        
+        .memory-item {
+            min-width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+        
+        .memory-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .memory-img {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .memory-img:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/></svg>');
+            background-size: 20px 20px;
+            opacity: 0.3;
+        }
+        
+        .memory-img i {
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+        }
+        
+        .memory-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+        
+        .memory-item:hover .memory-overlay {
+            transform: translateY(0);
+        }
+        
+        .memory-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .memory-desc {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .image-section {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .image-container {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow);
+            margin-bottom: 15px;
+            transition: var(--transition);
+        }
+        
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed rgba(138, 43, 226, 0.3);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .image-placeholder:hover {
+            background: rgba(138, 43, 226, 0.15);
+            border-color: var(--accent);
+        }
+        
+        .image-placeholder i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .image-placeholder p {
+            font-size: 1.2rem;
+            color: var(--light);
+            text-align: center;
+        }
+        
+        .image-caption {
+            font-size: 1.1rem;
+            color: var(--light);
+            text-align: center;
+            font-style: italic;
+            opacity: 0.8;
+            max-width: 500px;
+        }
+        
+        .song-player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        .song-list {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        .song-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .song-item:hover {
+            background: rgba(138, 43, 226, 0.1);
+            transform: translateX(10px);
+        }
+        
+        .song-item.active {
+            background: rgba(138, 43, 226, 0.2);
+            border-left: 3px solid var(--accent);
+        }
+        
+        .song-info {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        
+        .song-title {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--text);
+            text-decoration: none;
+            display: block;
+        }
+        
+        .song-title:hover {
+            color: var(--accent);
+        }
+        
+        .song-artist {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        
+        .song-controls {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .control-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        
+        .control-btn:hover {
+            background: var(--accent);
+            transform: scale(1.1);
+        }
+        
+        .special-request {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 20px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .special-request:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+        
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-50px, -50px); }
+        }
+        
+        .special-request h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .special-request p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .akash-name, .akshu-name, .babe-name {
+            color: var(--light);
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .future-moments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .future-card {
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+        }
+        
+        .future-card:hover {
+            transform: translateY(-10px);
+            background: rgba(138, 43, 226, 0.15);
+        }
+        
+        .future-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .future-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .future-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .navigation {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .nav-dot.active {
+            background: var(--accent);
+            transform: scale(1.3);
+        }
+        
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--secondary);
+            transform: rotate(45deg);
+            opacity: 0;
+            animation: float 8s infinite ease-in-out;
+            z-index: 1;
+        }
+        
+        .heart:before, .heart:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: var(--secondary);
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+        
+        .heart:after {
+            top: 0;
+            left: -10px;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(-30px) rotate(45deg);
+                opacity: 0.9;
+            }
+        }
+        
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary), var(--accent));
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+        
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(138, 43, 226, 0.3);
+            animation: floatElement 15s infinite linear;
+        }
+        
+        @keyframes floatElement {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+            }
+        }
+        
+        .couple-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .couple-img {
+            width: 200px;
+            height: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .couple-img:hover {
+            transform: translateY(-10px);
+        }
+        
+        .couple-img .img-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .couple-img .img-placeholder i {
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .forever-content {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .love-quote {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--light);
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .love-quote:before, .love-quote:after {
+            content: '"';
+            font-size: 4rem;
+            color: var(--accent);
+            position: absolute;
+            top: -20px;
+            opacity: 0.7;
+        }
+        
+        .love-quote:before {
+            left: -40px;
+        }
+        
+        .love-quote:after {
+            right: -40px;
+        }
+        
+        .animated-text {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .animated-text:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(to right, transparent, var(--accent), transparent);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.5s ease;
+        }
+        
+        .animated-text:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        /* Forever Section Enhancements */
+        .forever-animation {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+        }
+        
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .floating-heart {
+            position: absolute;
+            font-size: 2rem;
+            color: var(--accent);
+            animation: floatingHeart 5s infinite ease-in-out;
+            opacity: 0;
+        }
+        
+        @keyframes floatingHeart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .pulse-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            animation: pulseRing 2s infinite;
+        }
+        
+        @keyframes pulseRing {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        .heart-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            color: var(--secondary);
+            z-index: 2;
+        }
+
+        .video-container-bg {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .video-container-bg video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            pointer-events: none;
+        }
+
+        .music-control {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 100;
+        }
+
+        .music-control .control-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            box-shadow: var(--shadow);
+        }
+
+        .music-control .control-btn:hover {
+            background: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .spotify-icon {
+            color: #1DB954;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            transition: var(--transition);
+        }
+
+        .song-item:hover .spotify-icon {
+            transform: scale(1.2);
+        }
+
+        .song-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .song-link:hover {
+            color: inherit;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .content-box {
+                padding: 30px;
+            }
+            
+            .letter-content {
+                font-size: 1.5rem;
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 0;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-content:after {
+                left: -10px !important;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content:after {
+                right: auto;
+                left: -10px;
+            }
+            
+            .memory-item {
+                min-width: 250px;
+                height: 350px;
+            }
+            
+            .navigation {
+                right: 15px;
+            }
+            
+            .future-moments {
+                grid-template-columns: 1fr;
+            }
+            
+            .couple-images {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .love-quote {
+                font-size: 2rem;
+            }
+            
+            .image-container {
+                height: 300px;
+            }
+
+            .music-control {
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+        
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .stagger-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .countdown-item {
+            text-align: center;
+            background: rgba(138, 43, 226, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+        
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .countdown-label {
+            font-size: 1rem;
+            color: var(--light);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(186, 85, 211, 0.7);
+            }
+            
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(186, 85, 211, 0);
+            }
+            
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(186, 85, 211, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="bgMusicToggle" class="control-btn">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+    
+    <!-- Floating hearts -->
+    <div id="hearts-container"></div>
+    
+    <!-- Floating elements -->
+    <div class="floating-elements" id="floating-elements"></div>
+    
+    <!-- Navigation -->
+    <div class="navigation" id="navigation">
+        <div class="nav-dot active" data-section="home"></div>
+        <div class="nav-dot" data-section="letter"></div>
+        <div class="nav-dot" data-section="journey"></div>
+        <div class="nav-dot" data-section="memories"></div>
+        <div class="nav-dot" data-section="songs"></div>
+        <div class="nav-dot" data-section="future"></div>
+        <div class="nav-dot" data-section="request"></div>
+        <div class="nav-dot" data-section="forever"></div>
+    </div>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="content-box fade-in">
+            <h1>Happy Boyfriend's Day, <span class="akash-name">Akash</span>!</h1>
+            <p class="subtitle">You're my safe place, my happy thought, and my biggest blessing ❤️</p>
+            
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="pic9.jpg" alt="Our photo">
+                </div>
+                <p class="image-caption">My forever person, my always and forever</p>
+            </div>
+            
+            <p class="subtitle">Scroll down to explore our beautiful journey together, <span class="babe-name">babe</span></p>
+        </div>
+    </section>
+    
+    <!-- Love Letter Section -->
+    <section id="letter">
+        <div class="content-box fade-in">
+            <h2>My Love Letter to You</h2>
+            
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="game1.jpg" alt="Our photo">
+                </div>
+                <p class="image-caption">Every moment with you is a treasure</p>
+            </div>
+            
+            <div class="letter-content">
+                <p>Happy Boyfriend's Day, my love ❤️✨</p>
+                <p>You're not just my boyfriend, you're my safe place, my happiness, my best friend, my biggest strength, my everything. From the very beginning till today, our journey has been filled with countless emotions ....laughter, tears, fights, patch-ups, late-night talks, and endless memories that no one else will ever understand the way we do.</p>
+                <p>Yes, our bond has faced many obstacles, but even through all the storms, we've held on to each other and come out stronger every single time. People may try to come between us, but nothing in this world can break the love we share. With you, every day feels like a blessing, every smile feels like a fairy tale, and every hug feels like home.</p>
+                <p>I pray for your health, your happiness, and for our love to grow deeper with every passing year. You are my destiny, my jaan, the most precious part of my world. And one day, I know we'll turn all our dreams into reality, living every moment together ... from today till forever 💍❤️</p>
+            </div>
+            
+            <div class="image-section">
+                <div class="image-container">
+                    <div class="video-container-bg"> 
+                        <video autoplay muted loop playsinline> 
+                            <source src="v1.mp4" type="video/mp4"> 
+                        </video> 
+                        <div class="video-placeholder"> 
+                            <i class="fas fa-video"></i> 
+                        </div> 
+                    </div>
+                </div>
+                <p class="image-caption">Our love story</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Journey Section -->
+    <section id="journey">
+        <div class="content-box fade-in">
+            <h2>Our Beautiful Journey</h2>
+            <p class="subtitle">From strangers to soulmates, our story continues to unfold</p>
+        
+            
+            <div class="timeline">
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">18th April</div>
+                        <div class="timeline-text">The day life changed when we first met 💫</div>
+                    </div>
+                </div>
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">27th May</div>
+                        <div class="timeline-text">You called me "<span class="babe-name">babe</span>" for the first time</div>
+                    </div>
+                </div>
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June</div>
+                        <div class="timeline-text">My heartfelt confession to you</div>
+                    </div>
+                </div>
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">6th June</div>
+                        <div class="timeline-text">Hearing that magical word from your serene voice</div>
+                    </div>
+                </div>
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Our Story</div>
+                        <div class="timeline-text">Stranger → Dost → Tumhaari <span class="akshu-name">Akshu</span> ✨ (our filmy love story)</div>
+                    </div>
+                </div>
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Today</div>
+                        <div class="timeline-text">Through every obstacle till today… still together, still strong ❤️</div>
+                    </div>
+                </div>
+                <div class="timeline-item stagger-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2031-2035</div>
+                        <div class="timeline-text">And InshaAllah… this journey will end with our forever — our marriage 💍</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="tog6.jpg" style="height: 100%;" alt="Our photo">
+                </div>
+                <p class="image-caption">Our love keeps growing stronger every day</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Memories Section -->
+    <section id="memories">
+        <div class="content-box fade-in">
+            <h2>Our Precious Memories</h2>
+            <p class="subtitle">The moments that made our love story special</p>
+            
+            <div class="image-section">
+                <div class="image-container" style="height: 250px;">
+                    <img src="pic2.jpg" alt="Our photo">
+                </div>
+                <p class="image-caption">A collection of our happiest moments</p>
+            </div>
+            
+            <div class="memory-scroll">
+                <div class="memory-item">
+                    <div class="memory-img">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="memory-overlay">
+                        <div class="memory-title">Our First Date</div>
+                        <div class="memory-desc">That magical evening when everything began</div>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-img">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="memory-overlay">
+                        <div class="memory-title">Movie Nights</div>
+                        <div class="memory-desc">Cuddled up with popcorn and our favorite films</div>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-img">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="memory-overlay">
+                        <div class="memory-title">Sunset Walks</div>
+                        <div class="memory-desc">Hand in hand as the sky painted itself in hues of love</div>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-img">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="memory-overlay">
+                        <div class="memory-title">Food Adventures</div>
+                        <div class="memory-desc">Trying new cuisines and creating delicious memories</div>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-img">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="memory-overlay">
+                        <div class="memory-title">Love Notes</div>
+                        <div class="memory-desc">Sweet messages that made ordinary days extraordinary</div>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-img">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="memory-overlay">
+                        <div class="memory-title">Celebrations</div>
+                        <div class="memory-desc">Every milestone celebrated with joy and love</div>
+                    </div>
+                </div>
+            </div>
+            <p class="image-caption">Every memory with you is precious</p>
+        </div>
+    </section>
+    
+    <!-- Songs Section -->
+    <section id="songs">
+        <div class="content-box fade-in">
+            <h2>Our Favorite Songs</h2>
+            <p class="subtitle">The melodies that remind me of us</p>
+            
+            <div class="image-section">
+                <div class="image-container" style="height:700px">
+                    <img src="pic 3.jpg" alt="Our photo">
+                </div>
+                <p class="image-caption">Our personal soundtrack</p>
+            </div>
+            
+            <div class="song-player">
+                <div class="song-list">
+                    <!-- Song items with Spotify links -->
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/6YNl1rXbhKvmbMrw9cp3RQ" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Faasle</div>
+                                <div class="song-artist">Kaavish and Qurat-ul-Ain Balouch</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/5AhxzlhZbKYfu4YNiUnmvx" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Jiya Lage Na</div>
+                                <div class="song-artist">Isha Malviya</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Perfect</div>
+                                <div class="song-artist">Ed Sheeran</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/29MwuBDyKBel7ohTSaxYpD" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Sparsha Sangeet</div>
+                                <div class="song-artist">Purna Rai</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/71BqAINEnezjQfxE4VuJfq" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Slut!</div>
+                                <div class="song-artist">Taylor Swift</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/043SPVu75TXbs94ZfM9dfn" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Dil</div>
+                                <div class="song-artist">Shreya Ghoshal</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                    <div class="song-item">
+                        <a href="https://open.spotify.com/track/0rlLBWFFTQiOWi963SH9bb" target="_blank" class="song-link">
+                            <i class="fas fa-music"></i>
+                            <div class="song-info">
+                                <div class="song-title">Choo Lo</div>
+                                <div class="song-artist">The Local Train</div>
+                            </div>
+                            <i class="fab fa-spotify spotify-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Future Moments Section -->
+    <section id="future">
+        <div class="content-box fade-in">
+            <h2>Moments I Want to Create With You</h2>
+            <p class="subtitle">Our future is filled with endless possibilities</p>
+            
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="tog1.jpg" alt="Our photo">
+                </div>
+                <p class="image-caption">Our dreams together</p>
+            </div>
+            
+            <div class="future-moments">
+                <div class="future-card stagger-item">
+                    <div class="future-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div class="future-title">Our Wedding Day</div>
+                    <div class="future-desc">The day we officially become one, surrounded by our loved ones, promising forever to each other.</div>
+                </div>
+                <div class="future-card stagger-item">
+                    <div class="future-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="future-title">Our First Home</div>
+                    <div class="future-desc">Building our sanctuary together, filled with love, laughter, and countless memories.</div>
+                </div>
+                <div class="future-card stagger-item">
+                    <div class="future-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="future-title">Travel Adventures</div>
+                    <div class="future-desc">Exploring the world hand in hand, creating stories in every corner of the globe.</div>
+                </div>
+                <div class="future-card stagger-item">
+                    <div class="future-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="future-title">Growing Old Together</div>
+                    <div class="future-desc">Watching our love story unfold through the years, growing more beautiful with time.</div>
+                </div>
+            </div>
+
+            <p class="image-caption">Our bright future ahead</p>
+        </div>
+    </section>
+    
+    <!-- Special Request Section -->
+    <section id="request">
+        <div class="content-box fade-in">
+            <h2>A Special Request</h2>
+            <div class="special-request">
+                <h3>Come Back to Delhi Soon!</h3>
+                <p>My dearest <span class="akash-name">Akash</span>,</p>
+                <p>Every day without you feels incomplete. Delhi isn't the same without your presence, your smile, your warmth.</p>
+                <p>I'm counting down the days until you're back here with me, where you belong. Our city, our memories, our future - everything is waiting for you.</p>
+                <p>Please come back to Delhi as soon as possible. I miss you more than words can express! ❤️</p>
+            </div>
+            
+            <div class="image-section">
+                <div class="image-container" style="margin: 30px 0;">
+                    <img src="pic4.jpg" alt="Our photo">
+                </div>
+                <p class="image-caption">Waiting for you in our city</p>
+            </div>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">0</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">0</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">0</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">0</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Forever Section -->
+    <section id="forever">
+        <div class="content-box fade-in">
+            <div class="forever-content">
+                <h1>Forever Yours</h1>
+                
+                <div class="love-quote">
+                    "In your arms, I've found my home. In your eyes, I've found my paradise."
+                </div>
+                
+                <div class="forever-animation">
+                    <div class="floating-hearts" id="floating-hearts"></div>
+                    <div class="pulse-ring"></div>
+                    <div class="heart-center">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                
+                <p class="subtitle">You make ordinary days feel like adventures</p>
+                <p class="subtitle">So lucky to call you mine, <span class="babe-name">babe</span></p>
+                <p class="subtitle">Happy Boyfriend's Day, my love ❤️</p>
+                
+                <div class="image-section">
+                    <div class="image-container" style="margin-top: 30px; height: 650px;">
+                        <img src="pictog.jpg" alt="Our photo">
+                    </div>
+                    <p class="image-caption">My forever and always</p>
+                </div>
+                
+                <div class="special-request" style="margin-top: 30px;">
+                    <p>With all my love, forever and always</p>
+                    <p class="akshu-name">Your Sam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Create floating hearts
+        function createHearts() {
+            const container = document.getElementById('hearts-container');
+            const heartCount = 40;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const size = Math.random() * 15 + 10;
+                const delay = Math.random() * 5;
+                const duration = Math.random() * 5 + 5;
+                
+                heart.style.left = `${left}vw`;
+                heart.style.top = `${top}vh`;
+                heart.style.width = `${size}px`;
+                heart.style.height = `${size}px`;
+                heart.style.animationDelay = `${delay}s`;
+                heart.style.animationDuration = `${duration}s`;
+                
+                container.appendChild(heart);
+            }
+        }
+        
+        // Create floating elements
+        function createFloatingElements() {
+            const container = document.getElementById('floating-elements');
+            const elements = ['❤️', '💕', '💖', '💘', '💝', '💞'];
+            const elementCount = 20;
+            
+            for (let i = 0; i < elementCount; i++) {
+                const element = document.createElement('div');
+                element.classList.add('floating-element');
+                element.textContent = elements[Math.floor(Math.random() * elements.length)];
+                
+                // Random position and animation
+                const left = Math.random() * 100;
+                const delay = Math.random() * 15;
+                const duration = Math.random() * 10 + 10;
+                
+                element.style.left = `${left}vw`;
+                element.style.animationDelay = `${delay}s`;
+                element.style.animationDuration = `${duration}s`;
+                
+                container.appendChild(element);
+            }
+        }
+        
+        // Create floating hearts for forever section
+        function createForeverHearts() {
+            const container = document.getElementById('floating-hearts');
+            const heartCount = 12;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('floating-heart');
+                heart.innerHTML = '<i class="fas fa-heart"></i>';
+                
+                // Random position and animation
+                const left = Math.random() * 100;
+                const delay = Math.random() * 5;
+                const duration = Math.random() * 3 + 3;
+                
+                heart.style.left = `${left}%`;
+                heart.style.animationDelay = `${delay}s`;
+                heart.style.animationDuration = `${duration}s`;
+                
+                container.appendChild(heart);
+            }
+        }
+        
+        // Scroll animations
+        function initScrollAnimations() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const staggerElements = document.querySelectorAll('.stagger-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        
+                        // If it's a timeline item, add staggered delay
+                        if (entry.target.classList.contains('stagger-item')) {
+                            const index = Array.from(staggerElements).indexOf(entry.target);
+                            entry.target.style.transitionDelay = `${index * 0.1}s`;
+                        }
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => observer.observe(el));
+            staggerElements.forEach(el => observer.observe(el));
+        }
+        
+        // Navigation
+        function initNavigation() {
+            const navDots = document.querySelectorAll('.nav-dot');
+            const sections = document.querySelectorAll('section');
+            const progressBar = document.getElementById('progress-bar');
+            
+            // Update progress bar and active nav dot on scroll
+            window.addEventListener('scroll', () => {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrollTop = window.pageYOffset;
+                const scrollPercent = (scrollTop / documentHeight) * 100;
+                
+                progressBar.style.width = `${scrollPercent}%`;
+                
+                // Update active nav dot
+                sections.forEach((section, index) => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+                        navDots.forEach(dot => dot.classList.remove('active'));
+                        navDots[index].classList.add('active');
+                    }
+                });
+            });
+            
+            // Nav dot click events
+            navDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    sections[index].scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        }
+        
+        // Background music functionality
+        function initBackgroundMusic() {
+            const bgMusic = document.getElementById('bgMusic');
+            const bgMusicToggle = document.getElementById('bgMusicToggle');
+            let bgMusicPlaying = false;
+
+            // Set volume to 30% for soft background music
+            bgMusic.volume = 0.3;
+
+            // Try to play background music (with user interaction requirement)
+            function playBackgroundMusic() {
+                const playPromise = bgMusic.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        bgMusicPlaying = true;
+                        bgMusicToggle.innerHTML = '<i class="fas fa-pause"></i>';
+                    }).catch(error => {
+                        console.log('Autoplay prevented. User interaction required.');
+                        bgMusicToggle.innerHTML = '<i class="fas fa-play"></i>';
+                    });
+                }
+            }
+
+            // Toggle background music
+            bgMusicToggle.addEventListener('click', function() {
+                if (bgMusicPlaying) {
+                    bgMusic.pause();
+                    bgMusicPlaying = false;
+                    this.innerHTML = '<i class="fas fa-play"></i>';
+                } else {
+                    playBackgroundMusic();
+                }
+            });
+
+            // Start with music paused, wait for user interaction
+            bgMusic.pause();
+            bgMusicPlaying = false;
+
+            // Add tooltip for music control
+            bgMusicToggle.title = "Click to play/pause background music";
+        }
+        
+        // Countdown timer
+        function initCountdown() {
+            // Set the date we're counting down to (example: 30 days from now)
+            const countDownDate = new Date();
+            countDownDate.setDate(countDownDate.getDate() + 30);
+            
+            // Update the count down every 1 second
+            const countdownFunction = setInterval(function() {
+                // Get today's date and time
+                const now = new Date().getTime();
+                
+                // Find the distance between now and the count down date
+                const distance = countDownDate - now;
+                
+                // Time calculations for days, hours, minutes and seconds
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                // Output the result in elements with id="days", "hours", "minutes", "seconds"
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+                
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(countdownFunction);
+                    document.getElementById("days").innerHTML = "0";
+                    document.getElementById("hours").innerHTML = "0";
+                    document.getElementById("minutes").innerHTML = "0";
+                    document.getElementById("seconds").innerHTML = "0";
+                }
+            }, 1000);
+        }
+        
+        // Add animated text effect
+        function initAnimatedText() {
+            const animatedTexts = document.querySelectorAll('.animated-text');
+            animatedTexts.forEach(text => {
+                text.addEventListener('mouseenter', () => {
+                    text.style.color = 'var(--accent)';
+                });
+                text.addEventListener('mouseleave', () => {
+                    text.style.color = '';
+                });
+            });
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            createHearts();
+            createFloatingElements();
+            createForeverHearts();
+            initScrollAnimations();
+            initNavigation();
+            initBackgroundMusic();
+            initCountdown();
+            initAnimatedText();
+        });
+    </script>
+</body>
+</html>
